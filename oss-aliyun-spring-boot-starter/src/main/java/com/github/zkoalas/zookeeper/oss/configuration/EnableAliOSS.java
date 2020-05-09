@@ -1,4 +1,4 @@
-package com.github.zkoalas.oss.configuration;
+package com.github.zkoalas.zookeeper.oss.configuration;
 
 
 import org.springframework.context.annotation.Import;

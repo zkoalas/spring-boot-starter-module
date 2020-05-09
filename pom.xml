@@ -8,14 +8,15 @@
     <artifactId>spring-boot-starter-module</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-
+    <name>spring-boot-starter-module</name>
+    <description>spring-boot-starter-module is a springboot  development kit.</description>
+    <url>https://github.com/zkoalas/spring-boot-starter-module</url>
 
     <modules>
         <module>oss-aliyun-spring-boot-starter</module>
         <module>redis-id-generator-starter</module>
         <module>zookeeper-id-generator-starter</module>
     </modules>
-
 
     <licenses>
         <license>
@@ -43,7 +44,34 @@
         <java.version>1.8</java.version>
         <springboot.version>2.2.1.RELEASE</springboot.version>
         <aliyun.oss.version>3.9.1</aliyun.oss.version>
+        <lang3.version>3.10</lang3.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${springboot.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <profile>
