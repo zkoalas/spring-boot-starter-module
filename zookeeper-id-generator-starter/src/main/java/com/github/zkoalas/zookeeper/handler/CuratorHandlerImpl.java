@@ -2,7 +2,6 @@ package com.github.zkoalas.zookeeper.handler;
 
 import com.github.zkoalas.zookeeper.configuration.ZookeeperProperties;
 import com.github.zkoalas.zookeeper.exception.ZookeeperException;
-import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.zookeeper.CreateMode;
